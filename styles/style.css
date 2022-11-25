@@ -50,6 +50,7 @@ body{
     border-radius: 5px;
     margin-bottom: 10px;
     border: 1px solid #f5c6cb;
+    display: none;
 }
 
 .form form .name-details{
@@ -205,6 +206,14 @@ form .name-details .field:last-child{
     font-size: 16px;
     border-radius: 5px 0 0 5px;
     outline: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.users .search input.active{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .users .search button{
@@ -212,11 +221,21 @@ form .name-details .field:last-child{
     height: 45px;
     border: none;
     outline: none;
-    color: darkslategray;
-    background: #222;
+    color: #222;
+    background: darkslategray;
     cursor: pointer;
     font-size: 17px;
     border-radius: 0 5px 5px 0;
+    transition: all 0.2s ease;
+}
+
+.users .search button.active{
+    color: darkslategray;
+    background: #222;
+}
+
+.users .search button.active i::before{
+    content: "\f00d";
 }
 
 .users-list{
