@@ -177,6 +177,11 @@ form .name-details .field:last-child{
     font-weight: 500;
 }
 
+:is(.users, .chat-area) .details p{
+    color: rgb(80, 126, 126);
+    text-shadow: 0 0 3px rgb(70, 118, 118);
+}
+
 .users header .logout{
     color: darkslategray;
     font-size: 17px;
@@ -191,10 +196,15 @@ form .name-details .field:last-child{
     position: relative;
     align-items: center;
     justify-content: space-between;
+    background: rgba(35, 54, 54, 0.2);
+    border-radius: 10px;
 }
 
 .users .search .text{
-    font-size: 18px;
+    font-size: 14px;
+    padding-left: 10px;
+    font-style: italic;
+    color: #e6e6e6;
 }
 
 .users .search input{
@@ -270,8 +280,11 @@ form .name-details .field:last-child{
 
 .users-list a .status-dot{
     font-size: 10px;
-    color: darkslategray;
-    text-shadow: 0 0 4px darkslategray;
+    /* color: darkslategray;
+    text-shadow: 0 0 4px darkslategray; */
+
+    color: rgb(80, 126, 126);
+    text-shadow: 0 0 3px rgb(70, 118, 118);
 }
 
 /* php */
