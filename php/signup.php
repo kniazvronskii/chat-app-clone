@@ -15,7 +15,6 @@
             } else {
                 if(isset($_FILES['image'])) {
                     $img_name = $_FILES['image']['name'];
-                    // $img_tupe = $_FILES['image']['type'];
                     $tmp_name = $_FILES['image']['tmp_name'];
 
                     $img_explode = explode('.', $img_name);

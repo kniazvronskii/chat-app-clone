@@ -16,16 +16,16 @@
             <header>Realtime Chat App</header>
             <form action="#">
 
-                <div class="error-txt">This is an error message!</div>
+                <div class="error-txt"></div>
             
                     <div class="field input">
                         <label>Email Address</label>
-                        <input type="email" placeholder="Enter your email">
+                        <input type="email" name="email" placeholder="Enter your email">
                     </div>
 
                     <div class="field input">
                         <label>Password</label>
-                        <input type="password" placeholder="Enter your password">
+                        <input type="password" name="password" placeholder="Enter your password">
                         <i class="fas fa-eye"></i>
                     </div>
 
@@ -42,6 +42,7 @@
     </div>
 
     <script src="scripts/pass-show-hide.js"></script>
+    <script src="scripts/login.js"></script>
     
 </body>
 </html>
